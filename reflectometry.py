@@ -523,18 +523,18 @@ class reflectometry_tool:
         return final_data
 
 
-a = reflectometry_tool()
-a.Wavelengths = (250, 801, 2)
-#aa = a.dirRI_to_params(path = 'D:\\Проекты\\ReflectML\\Оптика Нитриды\\TiN')
-params = {'Tauc-Lorentz_1': {'e_inf': 2.993, 'A': 166.5276, 'E_0': 2.151, 'G': 1.912, 'E_g': 3.748},
-                 'Tauc-Lorentz_2': {'A': 162.4371, 'E_0': 3.284, 'G': 0.196, 'E_g': 3.284},
-                 'Tauc-Lorentz_3': {'A': 38.3279, 'E_0': 5.076, 'G': 3.618, 'E_g': 2.051},
-                 'Drude': {'N': 1.6478E22, 'mu': 0.854, 'm_star': 0.721}}
+# a = reflectometry_tool()
+# a.Wavelengths = (250, 801, 2)
+# #aa = a.dirRI_to_params(path = 'D:\\Проекты\\ReflectML\\Оптика Нитриды\\TiN')
+# params = {'Tauc-Lorentz_1': {'e_inf': 2.993, 'A': 166.5276, 'E_0': 2.151, 'G': 1.912, 'E_g': 3.748},
+#                  'Tauc-Lorentz_2': {'A': 162.4371, 'E_0': 3.284, 'G': 0.196, 'E_g': 3.284},
+#                  'Tauc-Lorentz_3': {'A': 38.3279, 'E_0': 5.076, 'G': 3.618, 'E_g': 2.051},
+#                  'Drude': {'N': 1.6478E22, 'mu': 0.854, 'm_star': 0.721}}
 
-#aa = a.random_dataset_for_ML_tauc_lorentz(count = 5000, positive_e2=True, oscillators= params)
-#aa.to_csv('data_TL_random_optics_TiN_1_5000.csv')
+# #aa = a.random_dataset_for_ML_tauc_lorentz(count = 5000, positive_e2=True, oscillators= params)
+# #aa.to_csv('data_TL_random_optics_TiN_1_5000.csv')
 
 
-aa = a.random_dataset_for_ML_couchy(10000)
-aa.to_csv('data_random_optics_Couchy_10000_2.csv')
+# aa = a.random_dataset_for_ML_couchy(10000)
+# aa.to_csv('data_random_optics_Couchy_10000_2.csv')
 
